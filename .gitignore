@@ -1,0 +1,9 @@
+ec2-killer
+
+*.env*
+
+!.env.sample
+
+.DS_Store
+
+*.tar.gz
