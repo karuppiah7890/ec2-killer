@@ -24,7 +24,7 @@ func main() {
 
 	c, err := config.NewConfigFromEnvVars()
 	if err != nil {
-		logAndExit("error occurred while getting configuration from environment variables", err, c)
+		log.Fatalf("\nerror occurred while getting configuration from environment variables: %v", err)
 	}
 
 	awsconfig, err := awsconf.LoadDefaultConfig(context.TODO())
